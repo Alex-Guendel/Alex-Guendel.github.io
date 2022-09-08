@@ -13,9 +13,9 @@
     <body>
 
         <nav class="navbar navbar-expand-sm bg-whight">
-            <div class="container-fluid">
+            <div class="container">
                 
-                <div class="container">
+                <div class="container-fluid">
                     <span class="navbar-brand" href="#">
                     <img src="./resources/media/bitcoin-placeholder.png" width="30" height="24">
                     </span>
@@ -40,17 +40,31 @@
                             <a class="nav-link active" href="#">Contact</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link dropdown-toggle btn-primary bg-dark text-white rounded" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- <li class="nav-item" id="fat-menu">
+                            <button class="nav-link dropdown-toggle btn-primary bg-dark text-white rounded" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         View work
-                            </a>
+                            </button>
                     
-                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item dropdown" href="#"> Medicine </a>
+                            <div class="dropdown-menu dropdown-menu-end mr-5" aria-labelledby="navbarDropdown">
+                                <button class="dropdown-item" href="#"> Medicine </button>
                                 <a class="dropdown-item" href="#"> Science and technology </a>
                                 <a class="dropdown-item" href="#"> Works in progress </a>
                             </div>
-                        </li>
+                        </li> -->
+
+                        <div class="btn-group">
+                            <button type="button" class="btn bg-dark text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              View work
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><button class="dropdown-item" type="button">Medicine</button></li>
+                              <li><button class="dropdown-item" type="button">Research</button></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><button class="dropdown-item" type="button">Works in progress</button></li>
+                            </ul>
+                          </div>
+
+                        
 
                     </ul>
 
@@ -69,7 +83,7 @@
                     <h1>Welcome! Site under construction 🏗️</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ad dolorum corporis magni iusto nam, est vitae? Odit molestias ipsa autem labore eius consequuntur quibusdam! Sed corrupti itaque aspernatur libero?</p>
                 </div>
-                <div class="col">
+                <div class="col-md">
                     <img class=".img-fluid rounded-circle p-3"  style="max-width:100%; height:auto;" src="./resources/media/Headshot wo flower.png" alt="placeholder" width="auto" height="">
                 </div>
             </div>
